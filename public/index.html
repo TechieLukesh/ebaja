@@ -11,36 +11,87 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-      body { font-family: "Poppins", sans-serif; }
-      .hero-gradient { background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%); }
-      .section-gradient { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); }
-      .card-hover { transition: all 0.3s ease; }
-      .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-      .scroll-smooth { scroll-behavior: smooth; }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.4) 100%
+        );
+      }
+      .section-gradient {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+      .scroll-smooth {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-white scroll-smooth">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+    <nav
+      class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800"
+    >
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center space-x-2">
-            <img src="bit college.webp" alt="BIT Mesra Deoghar" class="w-10 h-10 rounded-full" />
-            <span class="text-xl font-bold text-blue-400">Team Veloz Racing</span>
+            <img
+              src="bit college.webp"
+              alt="BIT Mesra Deoghar"
+              class="w-10 h-10 rounded-full"
+            />
+            <span class="text-xl font-bold text-blue-400"
+              >Team Veloz Racing</span
+            >
           </div>
           <!-- Desktop Menu -->
           <div class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-300 hover:text-blue-400 transition-colors">HOME</a>
-            <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">ABOUT</a>
-            <a href="#team" class="text-gray-300 hover:text-blue-400 transition-colors">TEAM</a>
-            <a href="#sponsor" class="text-gray-300 hover:text-blue-400 transition-colors">SPONSOR</a>
-            <a href="#gallery" class="text-gray-300 hover:text-blue-400 transition-colors">GALLERY</a>
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >HOME</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >ABOUT</a
+            >
+            <a
+              href="#team"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >TEAM</a
+            >
+            <a
+              href="#sponsor"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >SPONSOR</a
+            >
+            <a
+              href="#gallery"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >GALLERY</a
+            >
           </div>
           <!-- Mobile Menu Button -->
           <button id="mobile-menu-btn" class="md:hidden text-white">
@@ -50,25 +101,62 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
           <div class="flex flex-col space-y-4">
-            <a href="#home" class="text-gray-300 hover:text-blue-400 transition-colors">HOME</a>
-            <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors">ABOUT</a>
-            <a href="#team" class="text-gray-300 hover:text-blue-400 transition-colors">TEAM</a>
-            <a href="#sponsor" class="text-gray-300 hover:text-blue-400 transition-colors">SPONSOR</a>
-            <a href="#gallery" class="text-gray-300 hover:text-blue-400 transition-colors">GALLERY</a>
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >HOME</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >ABOUT</a
+            >
+            <a
+              href="#team"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >TEAM</a
+            >
+            <a
+              href="#sponsor"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >SPONSOR</a
+            >
+            <a
+              href="#gallery"
+              class="text-gray-300 hover:text-blue-400 transition-colors"
+              >GALLERY</a
+            >
           </div>
         </div>
       </div>
     </nav>
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <div class="absolute inset-0">
-        <img src="gibli art of baja vehicle.jpg" alt="eBAJA Vehicle" class="w-full h-full object-cover" />
+        <img
+          src="gibli art of baja vehicle.jpg"
+          alt="eBAJA Vehicle"
+          class="w-full h-full object-cover"
+        />
         <div class="absolute inset-0 hero-gradient"></div>
       </div>
       <div class="relative z-10 text-center px-4" data-aos="fade-up">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">TEAM VELOZ RACING</h1>
-        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">Built to Thrive, Engineered to Win</p>
-        <a href="#" class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">Download Brochure</a>
+        <h1
+          class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+        >
+          TEAM VELOZ RACING
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          Built to Thrive, Engineered to Win
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+          >Download Brochure</a
+        >
       </div>
     </section>
     <!-- About Us Section -->
@@ -76,22 +164,39 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div data-aos="fade-right">
             <p class="text-gray-300 text-lg mb-6">
-              Team Veloz Racing is the official electric All-Terrain Vehicle (ATV) team from Birla Institute of Technology, Mesra – Off Campus Deoghar, competing in the prestigious eBAJA SAEINDIA event. We are a group of passionate undergraduate engineers driven by innovation, sustainability, and performance.
+              Team Veloz Racing is the official electric All-Terrain Vehicle
+              (ATV) team from Birla Institute of Technology, Mesra – Off Campus
+              Deoghar, competing in the prestigious eBAJA SAEINDIA event. We are
+              a group of passionate undergraduate engineers driven by
+              innovation, sustainability, and performance.
             </p>
             <p class="text-gray-300 text-lg mb-6">
-              Formed with the vision of building an efficient, robust, and eco-conscious off-road electric vehicle, Team Veloz Racing brings together budding minds from diverse engineering disciplines—working hand in hand across design, simulation, fabrication, and testing.
+              Formed with the vision of building an efficient, robust, and
+              eco-conscious off-road electric vehicle, Team Veloz Racing brings
+              together budding minds from diverse engineering
+              disciplines—working hand in hand across design, simulation,
+              fabrication, and testing.
             </p>
             <p class="text-gray-300 text-lg mb-6">
-              We don't just build a vehicle—we build a legacy. Every nut, bolt, and circuit we place is a symbol of the hours of teamwork, late-night brainstorming sessions, and an unrelenting commitment to push boundaries.
+              We don't just build a vehicle—we build a legacy. Every nut, bolt,
+              and circuit we place is a symbol of the hours of teamwork,
+              late-night brainstorming sessions, and an unrelenting commitment
+              to push boundaries.
             </p>
           </div>
           <div data-aos="fade-left">
-            <img src="gibli art of vehicle with students.jpg" alt="Team Working" class="rounded-lg shadow-2xl" />
+            <img
+              src="gibli art of vehicle with students.jpg"
+              alt="Team Working"
+              class="rounded-lg shadow-2xl"
+            />
           </div>
         </div>
       </div>
@@ -101,26 +206,65 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Vehicle</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
           <p class="text-xl text-gray-400 mt-6 max-w-3xl mx-auto">
-            At Team Veloz Racing, our vehicle is more than just an electric All-Terrain Vehicle (eATV)—it’s a culmination of engineering precision, innovation, and sustainable design.<br>
-            Built to conquer the toughest terrains of the eBAJA SAEINDIA challenge, our eATV represents a seamless fusion of power, control, and endurance. Every component—from the drivetrain to the suspension, from the frame to the battery pack—has been engineered and tested to meet the rigorous demands of performance, safety, and efficiency.
+            At Team Veloz Racing, our vehicle is more than just an electric
+            All-Terrain Vehicle (eATV)—it’s a culmination of engineering
+            precision, innovation, and sustainable design.<br />
+            Built to conquer the toughest terrains of the eBAJA SAEINDIA
+            challenge, our eATV represents a seamless fusion of power, control,
+            and endurance. Every component—from the drivetrain to the
+            suspension, from the frame to the battery pack—has been engineered
+            and tested to meet the rigorous demands of performance, safety, and
+            efficiency.
           </p>
         </div>
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-gray-700 rounded-lg p-6" data-aos="fade-up">
-            <h3 class="text-2xl font-bold mb-4 text-blue-400">Key Highlights:</h3>
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">
+              Key Highlights:
+            </h3>
             <ul class="list-disc list-inside text-gray-300 space-y-2">
-              <li><span class="font-bold">🔋 Electric Powertrain:</span> Powered by a high-torque PMSM motor and a custom-built battery pack, our vehicle ensures consistent acceleration and eco-friendly performance without compromising on power.</li>
-              <li><span class="font-bold">⚙️ Two-Stage Gearbox:</span> Designed in-house with precision gear ratios for optimal torque delivery across all terrains.</li>
-              <li><span class="font-bold">🛞 Independent Suspension System:</span> Engineered for maximum stability and control, allowing smooth traversal through rugged trails and sharp turns.</li>
-              <li><span class="font-bold">🛡️ Lightweight & Durable Chassis:</span> Fabricated using high-strength steel tubing, our roll cage and frame provide safety without adding unnecessary weight.</li>
-              <li><span class="font-bold">🔧 Self-Manufactured Components:</span> From the steering system to the uprights, much of our vehicle is custom-designed and fabricated by team members to enhance learning and optimize performance.</li>
+              <li>
+                <span class="font-bold">🔋 Electric Powertrain:</span> Powered
+                by a high-torque PMSM motor and a custom-built battery pack, our
+                vehicle ensures consistent acceleration and eco-friendly
+                performance without compromising on power.
+              </li>
+              <li>
+                <span class="font-bold">⚙️ Two-Stage Gearbox:</span> Designed
+                in-house with precision gear ratios for optimal torque delivery
+                across all terrains.
+              </li>
+              <li>
+                <span class="font-bold">🛞 Independent Suspension System:</span>
+                Engineered for maximum stability and control, allowing smooth
+                traversal through rugged trails and sharp turns.
+              </li>
+              <li>
+                <span class="font-bold">🛡️ Lightweight & Durable Chassis:</span>
+                Fabricated using high-strength steel tubing, our roll cage and
+                frame provide safety without adding unnecessary weight.
+              </li>
+              <li>
+                <span class="font-bold">🔧 Self-Manufactured Components:</span>
+                From the steering system to the uprights, much of our vehicle is
+                custom-designed and fabricated by team members to enhance
+                learning and optimize performance.
+              </li>
             </ul>
           </div>
           <div class="bg-gray-700 rounded-lg p-6" data-aos="fade-up">
-            <img src="vehicle image.jpg" alt="eATV" class="w-full h-64 object-cover rounded-lg mb-4" />
-            <h3 class="text-2xl font-bold mb-2 text-purple-400">Achievements</h3>
+            <img
+              src="vehicle image.jpg"
+              alt="eATV"
+              class="w-full h-64 object-cover rounded-lg mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2 text-purple-400">
+              Achievements
+            </h3>
             <ul class="list-disc list-inside text-gray-300 space-y-2">
               <li>2nd position in Eastern India</li>
               <li>Among top 50 teams in India in BAJA SAE 2026</li>
@@ -134,32 +278,64 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Our eBAJA Journey</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
         <div class="max-w-4xl mx-auto">
           <div class="space-y-8">
             <div class="timeline-item pl-8" data-aos="fade-right">
               <div class="bg-gray-700 p-6 rounded-lg">
-                <h3 class="text-xl font-bold text-blue-400 mb-2">From Ground Zero to Garage</h3>
-                <p class="text-gray-300">With no prior legacy to lean on, we started from the ground up—learning, brainstorming, and experimenting. From mastering CAD and electrical schematics to sourcing raw materials and manufacturing our own components, every milestone has been a testament to our dedication.</p>
+                <h3 class="text-xl font-bold text-blue-400 mb-2">
+                  From Ground Zero to Garage
+                </h3>
+                <p class="text-gray-300">
+                  With no prior legacy to lean on, we started from the ground
+                  up—learning, brainstorming, and experimenting. From mastering
+                  CAD and electrical schematics to sourcing raw materials and
+                  manufacturing our own components, every milestone has been a
+                  testament to our dedication.
+                </p>
               </div>
             </div>
             <div class="timeline-item pl-8" data-aos="fade-left">
               <div class="bg-gray-700 p-6 rounded-lg">
-                <h3 class="text-xl font-bold text-purple-400 mb-2">Challenges That Shaped Us</h3>
-                <p class="text-gray-300">From tight deadlines to resource limitations, our path has been anything but easy. Yet, it’s these very obstacles that have fueled our unity and resilience. Each design iteration, failed prototype, and long night in the workshop has taught us something invaluable.</p>
+                <h3 class="text-xl font-bold text-purple-400 mb-2">
+                  Challenges That Shaped Us
+                </h3>
+                <p class="text-gray-300">
+                  From tight deadlines to resource limitations, our path has
+                  been anything but easy. Yet, it’s these very obstacles that
+                  have fueled our unity and resilience. Each design iteration,
+                  failed prototype, and long night in the workshop has taught us
+                  something invaluable.
+                </p>
               </div>
             </div>
             <div class="timeline-item pl-8" data-aos="fade-right">
               <div class="bg-gray-700 p-6 rounded-lg">
-                <h3 class="text-xl font-bold text-green-400 mb-2">Learning Beyond the Classroom</h3>
-                <p class="text-gray-300">This journey has pushed us beyond textbooks—into the world of real-world engineering, project management, budgeting, sponsorship outreach, and team leadership. It’s not just about building a car; it’s about building future-ready engineers.</p>
+                <h3 class="text-xl font-bold text-green-400 mb-2">
+                  Learning Beyond the Classroom
+                </h3>
+                <p class="text-gray-300">
+                  This journey has pushed us beyond textbooks—into the world of
+                  real-world engineering, project management, budgeting,
+                  sponsorship outreach, and team leadership. It’s not just about
+                  building a car; it’s about building future-ready engineers.
+                </p>
               </div>
             </div>
             <div class="timeline-item pl-8" data-aos="fade-left">
               <div class="bg-gray-700 p-6 rounded-lg">
-                <h3 class="text-xl font-bold text-yellow-400 mb-2">The Road Ahead</h3>
-                <p class="text-gray-300">As we gear up for the dynamic event, we're not just preparing to race—we’re preparing to prove that even a new team with limited resources can build something powerful with vision, skill, and unshakable commitment.</p>
+                <h3 class="text-xl font-bold text-yellow-400 mb-2">
+                  The Road Ahead
+                </h3>
+                <p class="text-gray-300">
+                  As we gear up for the dynamic event, we're not just preparing
+                  to race—we’re preparing to prove that even a new team with
+                  limited resources can build something powerful with vision,
+                  skill, and unshakable commitment.
+                </p>
               </div>
             </div>
           </div>
@@ -171,18 +347,32 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Meet Our Team</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="card-hover bg-gray-700 rounded-lg p-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+          <div
+            class="card-hover bg-gray-700 rounded-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center"
+            >
               <i class="fas fa-user text-4xl text-white"></i>
             </div>
             <h3 class="text-xl font-bold mb-2 text-blue-400">Monoswini Dey</h3>
             <p class="text-gray-400 mb-4">Captain</p>
           </div>
-          <div class="card-hover bg-gray-700 rounded-lg p-6 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center">
+          <div
+            class="card-hover bg-gray-700 rounded-lg p-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center"
+            >
               <i class="fas fa-user-tie text-4xl text-white"></i>
             </div>
             <h3 class="text-xl font-bold mb-2 text-green-400">Manket Kumar</h3>
@@ -196,9 +386,13 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Proudly Backed By</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
-        <div class="text-center text-xl text-gray-300">Our sponsors and supporters who make our journey possible.</div>
+        <div class="text-center text-xl text-gray-300">
+          Our sponsors and supporters who make our journey possible.
+        </div>
       </div>
     </section>
     <!-- Gallery Section -->
@@ -206,35 +400,85 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Gallery</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="card-hover rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-            <img src="gibli art of vehicle with students.jpg" alt="Team Working" class="w-full h-64 object-cover" />
+          <div
+            class="card-hover rounded-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="gibli art of vehicle with students.jpg"
+              alt="Team Working"
+              class="w-full h-64 object-cover"
+            />
             <div class="p-4 bg-gray-700">
-              <h3 class="text-lg font-semibold text-blue-400">Team Collaboration</h3>
-              <p class="text-gray-300 text-sm">Students working together on vehicle design</p>
+              <h3 class="text-lg font-semibold text-blue-400">
+                Team Collaboration
+              </h3>
+              <p class="text-gray-300 text-sm">
+                Students working together on vehicle design
+              </p>
             </div>
           </div>
-          <div class="card-hover rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-            <img src="vehicle image with all sir.jpg" alt="Faculty Support" class="w-full h-64 object-cover" />
+          <div
+            class="card-hover rounded-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="vehicle image with all sir.jpg"
+              alt="Faculty Support"
+              class="w-full h-64 object-cover"
+            />
             <div class="p-4 bg-gray-700">
-              <h3 class="text-lg font-semibold text-purple-400">Mentors & Faculty</h3>
-              <p class="text-gray-300 text-sm">Guidance from experienced faculty members</p>
+              <h3 class="text-lg font-semibold text-purple-400">
+                Mentors & Faculty
+              </h3>
+              <p class="text-gray-300 text-sm">
+                Guidance from experienced faculty members
+              </p>
             </div>
           </div>
-          <div class="card-hover rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-            <img src="vehicle image with team.jpg" alt="Team Photo" class="w-full h-64 object-cover" />
+          <div
+            class="card-hover rounded-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="vehicle image with team.jpg"
+              alt="Team Photo"
+              class="w-full h-64 object-cover"
+            />
             <div class="p-4 bg-gray-700">
-              <h3 class="text-lg font-semibold text-green-400">Team Veloz Racing</h3>
-              <p class="text-gray-300 text-sm">The complete team with our vehicle</p>
+              <h3 class="text-lg font-semibold text-green-400">
+                Team Veloz Racing
+              </h3>
+              <p class="text-gray-300 text-sm">
+                The complete team with our vehicle
+              </p>
             </div>
           </div>
-          <div class="card-hover rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-            <img src="gibli art of baja vehicle.jpg" alt="Vehicle Design" class="w-full h-64 object-cover" />
+          <div
+            class="card-hover rounded-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src="gibli art of baja vehicle.jpg"
+              alt="Vehicle Design"
+              class="w-full h-64 object-cover"
+            />
             <div class="p-4 bg-gray-700">
-              <h3 class="text-lg font-semibold text-yellow-400">Vehicle Design</h3>
-              <p class="text-gray-300 text-sm">Artistic representation of our eATV</p>
+              <h3 class="text-lg font-semibold text-yellow-400">
+                Vehicle Design
+              </h3>
+              <p class="text-gray-300 text-sm">
+                Artistic representation of our eATV
+              </p>
             </div>
           </div>
         </div>
@@ -245,14 +489,18 @@
       <div class="container mx-auto px-4">
         <div class="text-center mb-16" data-aos="fade-up">
           <h2 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h2>
-          <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"
+          ></div>
         </div>
         <div class="grid md:grid-cols-2 gap-12">
           <div data-aos="fade-right">
             <h3 class="text-2xl font-bold mb-6 text-blue-400">Get In Touch</h3>
             <div class="space-y-6">
               <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                <div
+                  class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center"
+                >
                   <i class="fas fa-envelope text-white"></i>
                 </div>
                 <div>
@@ -261,24 +509,38 @@
                 </div>
               </div>
               <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                <div
+                  class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center"
+                >
                   <i class="fab fa-linkedin text-white"></i>
                 </div>
                 <div>
                   <h4 class="font-semibold">LinkedIn</h4>
                   <p class="text-gray-300">
-                    <a href="https://www.linkedin.com/company/team-veloz-racing/" class="underline" target="_blank">linkedin.com/company/team-veloz-racing/</a>
+                    <a
+                      href="https://www.linkedin.com/company/team-veloz-racing/"
+                      class="underline"
+                      target="_blank"
+                      >linkedin.com/company/team-veloz-racing/</a
+                    >
                   </p>
                 </div>
               </div>
               <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
+                <div
+                  class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center"
+                >
                   <i class="fab fa-instagram text-white"></i>
                 </div>
                 <div>
                   <h4 class="font-semibold">Instagram</h4>
                   <p class="text-gray-300">
-                    <a href="https://www.instagram.com/teamvelozracing/" class="underline" target="_blank">@teamvelozracing</a>
+                    <a
+                      href="https://www.instagram.com/teamvelozracing/"
+                      class="underline"
+                      target="_blank"
+                      >@teamvelozracing</a
+                    >
                   </p>
                 </div>
               </div>
@@ -286,26 +548,60 @@
             <div class="mt-8">
               <h4 class="font-semibold mb-4">College Address</h4>
               <p class="text-gray-300">
-                Birla Institute of Technology, Mesra<br />Deoghar Campus<br />Deoghar, Jharkhand - 814142
+                Birla Institute of Technology, Mesra<br />Deoghar Campus<br />Deoghar,
+                Jharkhand - 814142
               </p>
             </div>
           </div>
           <div data-aos="fade-left">
-            <form class="space-y-6" action="https://formspree.io/f/yourformid" method="POST" id="contactForm">
+            <form
+              class="space-y-6"
+              action="https://formspree.io/f/yourformid"
+              method="POST"
+              id="contactForm"
+            >
               <div>
                 <label class="block text-sm font-medium mb-2">Name</label>
-                <input type="text" name="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="Your Name" required />
+                <input
+                  type="text"
+                  name="name"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white"
+                  placeholder="Your Name"
+                  required
+                />
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Email</label>
-                <input type="email" name="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="your.email@example.com" required />
+                <input
+                  type="email"
+                  name="email"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white"
+                  placeholder="your.email@example.com"
+                  required
+                />
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Message</label>
-                <textarea rows="5" name="message" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white" placeholder="Your message..." required></textarea>
+                <textarea
+                  rows="5"
+                  name="message"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 text-white"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300">Send Message</button>
-              <div id="formSuccess" class="hidden text-green-400 font-semibold mt-4">Thank you! Your message has been sent.</div>
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+              >
+                Send Message
+              </button>
+              <div
+                id="formSuccess"
+                class="hidden text-green-400 font-semibold mt-4"
+              >
+                Thank you! Your message has been sent.
+              </div>
             </form>
           </div>
         </div>
@@ -316,18 +612,34 @@
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-3 gap-8 items-center">
           <div class="flex items-center space-x-4">
-            <img src="bit college.webp" alt="BIT Mesra Deoghar" class="w-12 h-12 rounded-full" />
+            <img
+              src="bit college.webp"
+              alt="BIT Mesra Deoghar"
+              class="w-12 h-12 rounded-full"
+            />
             <div>
               <h3 class="text-xl font-bold text-blue-400">Team Veloz Racing</h3>
               <p class="text-gray-400 text-sm">BIT Mesra Deoghar eBAJA Team</p>
             </div>
           </div>
           <div class="text-center">
-            <p class="text-gray-400">&copy; 2024 Team Veloz Racing. All rights reserved.</p>
+            <p class="text-gray-400">
+              &copy; 2024 Team Veloz Racing. All rights reserved.
+            </p>
           </div>
           <div class="flex justify-center md:justify-end space-x-4">
-            <a href="https://www.linkedin.com/company/team-veloz-racing/" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a>
-            <a href="https://www.instagram.com/teamvelozracing/" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+            <a
+              href="https://www.linkedin.com/company/team-veloz-racing/"
+              class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+              target="_blank"
+              ><i class="fab fa-linkedin-in text-white"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/teamvelozracing/"
+              class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors"
+              target="_blank"
+              ><i class="fab fa-instagram text-white"></i
+            ></a>
           </div>
         </div>
       </div>
